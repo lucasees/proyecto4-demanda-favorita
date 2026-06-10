@@ -35,33 +35,33 @@ El "mejor modelo" no es el más preciso estadísticamente, sino el que **minimiz
 ## Hallazgos del EDA
 
 ### Facturación por familia de producto
-![Facturación por familia](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico1_ventas_familia.png)
+![Facturación por familia](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico1_ventas_familia.png)
 
 GROCERY I domina con el **36,7%** de las ventas. BEVERAGES con **24,9%**. Juntos representan más del 60% del negocio.
 
 ### Evolución temporal de ventas
-![Evolución temporal](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico2_evolucion_temporal.png)
+![Evolución temporal](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico2_evolucion_temporal.png)
 
 
 Tendencia claramente **ascendente** de 2013 a 2017. La media móvil de 30 días llega a ~700.000 en 2017.
 
 ### Estacionalidad semanal
-![Estacionalidad semanal](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico3_estacionalidad_semanal.png)
+![Estacionalidad semanal](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico3_estacionalidad_semanal.png)
 
 El **domingo es el día de mayor venta** (~3.447 promedio). El modelo debe capturar este patrón semanal.
 
 ### Impacto de las promociones
-![Efecto promoción](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico4_efecto_promocion.png)
+![Efecto promoción](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico4_efecto_promocion.png)
 
 Las promociones **duplican las ventas** (+104% uplift). Sin promoción: 1.606 unidades promedio. Con promoción: 3.275.
 
 ### Ventas vs. precio del petróleo
-![Petróleo](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico5_petroleo.png)
+![Petróleo](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico5_petroleo.png)
 
 Relación **inversa**: cuando cae el precio del petróleo, suben las ventas. Ecuador es una economía petrolera — la caída del crudo lleva a medidas de austeridad que empujan el consumo local.
 
 ### Efecto de los feriados nacionales
-![Feriados](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico6_feriados.png)
+![Feriados](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico6_feriados.png)
 
 Los feriados nacionales tienen un impacto **prácticamente nulo** (+0,3%). Esto le dice al equipo de operaciones que no hace falta sobreabastecerse para feriados.
 
@@ -78,7 +78,7 @@ Los feriados nacionales tienen un impacto **prácticamente nulo** (+0,3%). Esto 
 - **Encoding:** familia de producto y tienda
 
 ### Importancia de variables
-![Feature Importance](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico7_feature_importance.png)
+![Feature Importance](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico7_feature_importance.png)
 
 Las variables temporales dominan. El **día del mes** es el predictor más importante, seguido del mes y la media móvil de 7 días.
 
@@ -91,8 +91,7 @@ Las variables temporales dominan. El **día del mes** es el predictor más impor
 ---
 
 ## El diferencial: impacto económico
-
-![Impacto económico](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/notebooks/grafico8_impacto_economico.png)
+![Impacto económico](https://raw.githubusercontent.com/lucasees/proyecto4-demanda-favorita/main/NOTEBOOKS/grafico8_impacto_economico.png)
 
 | | Baseline | Modelo LightGBM |
 |---|---|---|
